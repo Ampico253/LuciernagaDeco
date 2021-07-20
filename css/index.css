@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.grillaPadre {
+  height: 100%;
+  display: grid;
+  grid-template-areas: "header" "barra" "textoA" "fotoA" "textoB" "fotoB" "textoC" "fotoC" "footer";
+  grid-template-rows: 150px auto auto auto auto auto auto auto 120px;
+  grid-auto-columns: 100%;
+  background-color: #f3efed; }
+
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+  background-color: #dbdf8e;
+  height: 150px; }
+
+/*.menu{
+	grid-area: barra;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}*/
+.seccionA .textoA {
+  grid-area: textoA; }
+
+.seccionA .carreteA {
+  grid-area: fotoA; }
+  .seccionA .carreteA img {
+    height: 300px; }
+
+.seccionB .textoB {
+  grid-area: textoB; }
+
+.seccionB .carreteB {
+  grid-area: fotoB; }
+  .seccionB .carreteB img {
+    height: 300px; }
+
+.seccionC .textoC {
+  grid-area: textoC; }
+
+.seccionC .carreteC {
+  grid-area: fotoC; }
+  .seccionC .carreteC img {
+    height: 300px; }
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between; }
+  .texto h1 {
+    color: #deb7aa; }
+
+/* ---------------Productos ------------------*/
